@@ -8,8 +8,8 @@ export default ({ id }: { id: string }) => (
     <Layout>
       <List>
         <ListItem>Remove the learning curve</ListItem>
-        <ListItem>Give a local editor experience</ListItem>
         <ListItem>Encourage sharing + discovery</ListItem>
+        <ListItem>Give a local editor experience</ListItem>
       </List>
     </Layout>
   </Fill>

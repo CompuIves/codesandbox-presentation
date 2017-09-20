@@ -31,11 +31,26 @@ import Why from './slides/why';
 import UseCases from './slides/use-cases';
 import Values from './slides/values';
 
+import designImage from './images/design.png';
+import firstSandboxImage from './images/first-codesandbox.png';
+import secondSandboxImage from './images/second-codesandbox.png';
+
+import learn1 from './images/learning-curve-1.png';
+import learn2 from './images/learning-curve-2.png';
+import learn3 from './images/learning-curve-3.png';
+
 import stIves from './images/st-ives.jpg';
 import workingsImage from './images/Workings.png';
 import errorImage from './images/error-suggestion.png';
 import templates from './images/templates.png';
 import apiImage from './images/codesandbox-api.png';
+
+import searchImage from './images/search.png';
+import profileImage from './images/profile.png';
+import embedImage from './images/embed.png';
+import mediumImage from './images/medium.png';
+
+import nowImage from './images/now.png';
 
 // Require CSS
 require('normalize.css');
@@ -55,6 +70,7 @@ const theme = createTheme(
     green: '#5da700',
     redBackground: '#400000',
     red: '#F27777',
+    black: 'black',
   },
   {
     primary: {
@@ -100,6 +116,19 @@ export default class Presentation extends React.Component {
             <span style={{ color: '#6CAEDD' }}>on the web?</span>
           </Text>
         </Slide>
+
+        <Slide bgColor="background">
+          <Image src={designImage} width={1000} />
+        </Slide>
+
+        <Slide bgColor="background">
+          <Image src={firstSandboxImage} width={1000} />
+        </Slide>
+
+        <Slide bgColor="background">
+          <Image src={secondSandboxImage} width={1000} />
+        </Slide>
+
         <Slide bgColor="background">
           <Notes>
             <div>
@@ -132,14 +161,10 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
         <Slide bgColor="background">
-          <Text fit caps textColor="white">
-            Remove the learning curve image (1)
-          </Text>
+          <Image src={learn1} width="100%" />
         </Slide>
         <Slide bgColor="background">
-          <Text fit caps textColor="white">
-            Remove the learning curve image (2)
-          </Text>
+          <Image src={learn2} width="100%" />
         </Slide>
         <Slide bgColor="background">
           <Notes>
@@ -148,20 +173,18 @@ export default class Presentation extends React.Component {
               web application development specifically
             </div>
           </Notes>
-          <Text fit caps textColor="white">
-            Remove the learning curve image (3)
-          </Text>
+          <Image src={learn3} width="100%" />
         </Slide>
 
         <Slide bgColor="background">
           <Text caps textColor="white">
             <div style={{ marginBottom: '1rem' }}>
               You shouldn't learn from{' '}
-              <span style={{ color: '#6CAEDD' }}>bottom up</span>
+              <span style={{ color: '#6CAEDD' }}>bottom to top</span>
             </div>
             <div>
               You should learn from{' '}
-              <span style={{ color: '#6CAEDD' }}>top down</span>
+              <span style={{ color: '#6CAEDD' }}>top to bottom</span>
             </div>
           </Text>
         </Slide>
@@ -174,9 +197,18 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide bgColor="background">
-          <Text textColor="primary">Default Templates</Text>
-
-          <Image width="100%" src={templates} />
+          <Text textColor="white" fit>
+            <a
+              href="https://mattiamanzati.github.io/mobx-state-tree-playground/"
+              target="_blank"
+              style={{ color: 'white' }}
+            >
+              https://mattiamanzati.github.io/mobx-state-tree-playground/
+            </a>
+          </Text>
+          <Text textColor="secondary">
+            <div style={{ marginTop: '1rem' }}>@mattiamanzati</div>
+          </Text>
         </Slide>
 
         <Slide bgColor="background">
@@ -186,11 +218,23 @@ export default class Presentation extends React.Component {
           </a>
         </Slide>
 
-        {/* Local editor experience */}
         <Slide bgColor="background">
+          <Notes>
+            <div>
+              Most of us are UI developers, then why are our development tools
+              code driven?
+            </div>
+          </Notes>
           <Text fit caps textColor="white">
-            Local editor experience
+            <span style={{ color: '#FFD399' }}>UI</span> over{' '}
+            <span style={{ color: '#6CAEDD' }}>code</span> configuration
           </Text>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text textColor="primary">Default Templates</Text>
+
+          <Image width="100%" src={templates} />
         </Slide>
 
         {/* Sharing + Discovery */}
@@ -198,6 +242,65 @@ export default class Presentation extends React.Component {
           <Text fit caps textColor="white">
             Encourage sharing + discovery
           </Text>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text textColor="primary">Search</Text>
+          <a href="https://codesandbox.io/search" target="_blank">
+            <Image width={1000} src={searchImage} />
+          </a>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text textColor="primary">Profile</Text>
+          <a href="https://codesandbox.io/u/kentcdodds" target="_blank">
+            <Image width="100%" src={profileImage} />
+          </a>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text fit caps textColor="white">
+            Github/CLI Import
+          </Text>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text textColor="primary">Embedding</Text>
+
+          <a href="https://codesandbox.io/embed/new" target="_blank">
+            <Image width="100%" src={embedImage} />
+          </a>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Image width="100%" src={mediumImage} />
+        </Slide>
+
+        {/* Local editor experience */}
+        <Slide bgColor="background">
+          <Text fit caps textColor="white">
+            Local editor experience
+          </Text>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text fit caps textColor="white">
+            Monaco Editor
+          </Text>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text fit caps textColor="white">
+            ESLint + Prettier
+          </Text>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text textColor="white">??</Text>
+        </Slide>
+
+        <Slide bgColor="black">
+          <Image src={nowImage} width="100%" />
         </Slide>
       </Deck>
     );
