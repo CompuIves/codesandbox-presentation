@@ -42,6 +42,7 @@ import learn3 from './images/learning-curve-3.png';
 
 import stIves from './images/st-ives.jpg';
 import workingsImage from './images/Workings.png';
+import workings2Image from './images/workings-2.png';
 import errorImage from './images/error-suggestion.png';
 import templates from './images/templates.png';
 import apiImage from './images/codesandbox-api.png';
@@ -94,6 +95,7 @@ export default class Presentation extends React.Component {
         contentHeight={720}
         transitionDuration={300}
         theme={theme}
+        progress="none"
       >
         <Slide bgColor="background">
           <Introduction />
@@ -106,7 +108,7 @@ export default class Presentation extends React.Component {
               all examples in my mind.
             </div>
           </Notes>
-          <Image height={750} src={stIves} />
+          <Image width={1000} src={stIves} />
         </Slide>
         <Slide bgColor="background">
           <Notes>
@@ -144,12 +146,17 @@ export default class Presentation extends React.Component {
               this environment
             </div>
           </Notes>
+
           <CodeSandbox />
         </Slide>
 
         {/* How it works */}
         <Slide bgColor="background">
-          <Image src={workingsImage} height={700} />
+          <Image src={workingsImage} width={600} />
+        </Slide>
+
+        <Slide bgColor="background">
+          <Image src={workings2Image} width={600} />
         </Slide>
 
         <Slide bgColor="background">
@@ -182,6 +189,12 @@ export default class Presentation extends React.Component {
             </div>
           </Notes>
           <Image src={learn3} width="100%" />
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text textColor="white">
+            Installing tooling should not stand in the way of getting started.
+          </Text>
         </Slide>
 
         <Slide bgColor="background">
@@ -227,9 +240,9 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide bgColor="background">
-          <Text lineHeight={1.2} textColor="white">
-            We are UI developers, then why are most of our development tools
-            terminal based?
+          <Text caps fit lineHeight={1.2} textColor="white">
+            <span style={{ color: '#FFD399' }}>UI</span> >{' '}
+            <span style={{ color: '#6CAEDD' }}>CODE</span>
           </Text>
         </Slide>
 
@@ -260,7 +273,7 @@ export default class Presentation extends React.Component {
 
         <Slide bgColor="background">
           <Text fit caps textColor="white">
-            Github Export/CLI Import
+            Github Import and CLI Export
           </Text>
         </Slide>
 
@@ -292,9 +305,7 @@ export default class Presentation extends React.Component {
         <Slide bgColor="background">
           <Text textColor="primary">Embedding</Text>
 
-          <a href="https://codesandbox.io/embed/new" target="_blank">
-            <Image width="100%" src={embedImage} />
-          </a>
+          <EditorEmbed id="new" />
         </Slide>
 
         <Slide bgColor="background">
@@ -306,6 +317,17 @@ export default class Presentation extends React.Component {
           <Text fit caps textColor="white">
             Local editor experience
           </Text>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text style={{ fontSize: '5rem' }} textColor="white">
+            The future is bright!
+          </Text>
+          <Layout style={{ marginTop: '3rem' }}>
+            <Text textColor="secondary">Service Workers</Text>
+            <Text textColor="secondary">Web Workers</Text>
+            <Text textColor="secondary">WebAssembly</Text>
+          </Layout>
         </Slide>
 
         <Slide bgColor="background">
@@ -322,7 +344,7 @@ export default class Presentation extends React.Component {
 
         <Slide bgColor="background">
           <Text fit caps textColor="white">
-            Offline Support
+            Offline Support?
           </Text>
         </Slide>
 
@@ -332,6 +354,12 @@ export default class Presentation extends React.Component {
 
         <Slide bgColor="black">
           <Image src={nowImage} width={1000} />
+        </Slide>
+
+        <Slide bgColor="black">
+          <Text textColor="white">
+            store.dispatch({'{'} type: "ENABLE_INTEGRATIONS" {'}'})
+          </Text>
         </Slide>
       </Deck>
     );

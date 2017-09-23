@@ -32,7 +32,10 @@ export default () => (
         </Text>
       </Fill>
 
-      <Text margin="11rem 2rem" textColor="white" textAlign="left">
+      <Text margin="8rem 2rem 0 2rem" textColor="white" textAlign="left">
+        https://ives.cool
+      </Text>
+      <Text margin="1rem 2rem" textColor="white" textAlign="left">
         @compuives
       </Text>
     </Fill>
