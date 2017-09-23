@@ -57,6 +57,8 @@ import mediumImage from './images/medium.png';
 import cycleImage from './images/cycle.png';
 import nowImage from './images/now.png';
 
+import contributorsImage from './images/contributors.png';
+
 // Require CSS
 require('normalize.css');
 require('spectacle/lib/themes/default/index.css');
@@ -360,6 +362,16 @@ export default class Presentation extends React.Component {
           <Text textColor="white">
             store.dispatch({'{'} type: "ENABLE_INTEGRATIONS" {'}'})
           </Text>
+        </Slide>
+
+        <Slide bgColor="black">
+          <Text textColor="white">Thanks!</Text>
+          <Image src={contributorsImage} height={500} />
+          <Text textColor="white">CompuIves/codesandbox-client</Text>
+        </Slide>
+
+        <Slide bgColor="black">
+          <Text textColor="white">@compuives</Text>
         </Slide>
       </Deck>
     );
