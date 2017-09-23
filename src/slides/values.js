@@ -7,7 +7,7 @@ export default ({ id }: { id: string }) => (
     <Heading>Goals</Heading>
     <Layout>
       <List>
-        <ListItem>Remove the learning curve</ListItem>
+        <ListItem>Lower the learning curve</ListItem>
         <ListItem>Encourage sharing + discovery</ListItem>
         <ListItem>Give a local editor experience</ListItem>
       </List>

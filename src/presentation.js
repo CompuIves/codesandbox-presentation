@@ -174,7 +174,7 @@ export default class Presentation extends React.Component {
             </div>
           </Notes>
           <Text fit caps textColor="white">
-            Remove the learning curve
+            Lower the learning curve
           </Text>
         </Slide>
         <Slide bgColor="background">
