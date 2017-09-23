@@ -34,6 +34,7 @@ import Values from './slides/values';
 import designImage from './images/design.png';
 import firstSandboxImage from './images/first-codesandbox.png';
 import secondSandboxImage from './images/second-codesandbox.png';
+import thirdSandboxImage from './images/third-codesandbox.png';
 
 import learn1 from './images/learning-curve-1.png';
 import learn2 from './images/learning-curve-2.png';
@@ -45,11 +46,14 @@ import errorImage from './images/error-suggestion.png';
 import templates from './images/templates.png';
 import apiImage from './images/codesandbox-api.png';
 
+import webpackDashboardImage from './images/webpack-dashboard.png';
+
 import searchImage from './images/search.png';
 import profileImage from './images/profile.png';
 import embedImage from './images/embed.png';
 import mediumImage from './images/medium.png';
 
+import cycleImage from './images/cycle.png';
 import nowImage from './images/now.png';
 
 // Require CSS
@@ -127,6 +131,10 @@ export default class Presentation extends React.Component {
 
         <Slide bgColor="background">
           <Image src={secondSandboxImage} width={1000} />
+        </Slide>
+
+        <Slide bgColor="background">
+          <Image src={thirdSandboxImage} width={1000} />
         </Slide>
 
         <Slide bgColor="background">
@@ -219,22 +227,14 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide bgColor="background">
-          <Notes>
-            <div>
-              Most of us are UI developers, then why are our development tools
-              code driven?
-            </div>
-          </Notes>
-          <Text fit caps textColor="white">
-            <span style={{ color: '#FFD399' }}>UI</span> over{' '}
-            <span style={{ color: '#6CAEDD' }}>code</span> configuration
+          <Text lineHeight={1.2} textColor="white">
+            We are UI developers, then why are most of our development tools
+            terminal based?
           </Text>
         </Slide>
 
         <Slide bgColor="background">
-          <Text textColor="primary">Default Templates</Text>
-
-          <Image width="100%" src={templates} />
+          <Image height={700} src={webpackDashboardImage} />
         </Slide>
 
         {/* Sharing + Discovery */}
@@ -260,7 +260,32 @@ export default class Presentation extends React.Component {
 
         <Slide bgColor="background">
           <Text fit caps textColor="white">
-            Github/CLI Import
+            Github Export/CLI Import
+          </Text>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text fit textColor="white">
+            <div style={{ marginBottom: '1rem' }}>
+              https://github.com<span style={{ color: '#6CAEDD' }}>
+                /reactjs/redux/blob/master/examples/todos
+              </span>
+            </div>
+          </Text>
+          <Text fit textColor="white">
+            <div>
+              <a
+                target="_blank"
+                href="https://codesandbox.io/s/github/reactjs/redux/blob/master/examples/todos"
+                style={{ color: '#E0E0E0', textDecoration: 'none' }}
+              >
+                https://codesandbox.io/s/github<span
+                  style={{ color: '#6CAEDD' }}
+                >
+                  /reactjs/redux/blob/master/examples/todos
+                </span>
+              </a>
+            </div>
           </Text>
         </Slide>
 
@@ -296,11 +321,17 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide bgColor="background">
-          <Text textColor="white">??</Text>
+          <Text fit caps textColor="white">
+            Offline Support
+          </Text>
+        </Slide>
+
+        <Slide bgColor="background">
+          <Image src={cycleImage} width={1000} />
         </Slide>
 
         <Slide bgColor="black">
-          <Image src={nowImage} width="100%" />
+          <Image src={nowImage} width={1000} />
         </Slide>
       </Deck>
     );
