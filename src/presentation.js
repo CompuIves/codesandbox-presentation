@@ -27,6 +27,7 @@ import Introduction from './slides/introduction';
 import CodeSandbox from './slides/codesandbox';
 import Birthday from './slides/birthday';
 import EditorEmbed from './slides/editor-embed';
+import EmbedAnimation from './slides/EmbedAnimation';
 import Why from './slides/why';
 import UseCases from './slides/use-cases';
 import Values from './slides/values';
@@ -110,7 +111,7 @@ export default class Presentation extends React.Component {
               all examples in my mind.
             </div>
           </Notes>
-          <Image width={1000} src={stIves} />
+          <Image width={950} src={stIves} />
         </Slide>
         <Slide bgColor="background">
           <Notes>
@@ -307,6 +308,12 @@ export default class Presentation extends React.Component {
         <Slide bgColor="background">
           <Text textColor="primary">Embedding</Text>
 
+          <EmbedAnimation />
+        </Slide>
+
+        <Slide bgColor="background">
+          <Text textColor="primary">Embedding</Text>
+
           <EditorEmbed id="new" />
         </Slide>
 
@@ -346,28 +353,14 @@ export default class Presentation extends React.Component {
 
         <Slide bgColor="background">
           <Text fit caps textColor="white">
-            Offline Support?
+            GitHub Commiting
           </Text>
         </Slide>
 
         <Slide bgColor="background">
-          <Image src={cycleImage} width={1000} />
-        </Slide>
-
-        <Slide bgColor="black">
-          <Image src={nowImage} width={1000} />
-        </Slide>
-
-        <Slide bgColor="black">
-          <Text textColor="white">
-            store.dispatch({'{'} type: "ENABLE_INTEGRATIONS" {'}'})
+          <Text fit caps textColor="white">
+            Deploying
           </Text>
-        </Slide>
-
-        <Slide bgColor="black">
-          <Text textColor="white">Thanks!</Text>
-          <Image src={contributorsImage} height={500} />
-          <Text textColor="white">CompuIves/codesandbox-client</Text>
         </Slide>
 
         <Slide bgColor="black">

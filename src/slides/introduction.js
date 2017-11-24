@@ -1,12 +1,12 @@
 import React from 'react';
 import { Slide, Layout, Heading, Fill, Image, Text } from 'spectacle';
 
-import profileImage from '../images/profile.jpg';
+import ivesImage from '../images/ives.png';
 
 export default () => (
   <Layout>
     <Fill>
-      <Image width="400px" src={profileImage} />
+      <Image width="400px" src={ivesImage} />
     </Fill>
     <Fill textColor="white">
       <Heading margin="2rem" textColor="white" textAlign="left" textSize="3rem">

@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gsap": "^1.20.3",
     "moment": "^2.18.1",
     "normalize.css": "^7.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.13",
-    "spectacle": "^2.2.2"
+    "spectacle": "^2.2.2",
+    "styled-components": "^2.2.3"
   },
   "devDependencies": {},
   "scripts": {
