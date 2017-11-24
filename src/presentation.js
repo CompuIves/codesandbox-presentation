@@ -353,7 +353,7 @@ export default class Presentation extends React.Component {
 
         <Slide bgColor="background">
           <Text fit caps textColor="white">
-            GitHub Commiting
+            GitHub Committing
           </Text>
         </Slide>
 
