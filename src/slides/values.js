@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { Fill, Layout, Heading, List, ListItem } from 'spectacle';
+import { Fill, Layout, Heading, List, ListItem } from "spectacle";
 
 export default ({ id }: { id: string }) => (
   <Fill>
@@ -8,7 +8,7 @@ export default ({ id }: { id: string }) => (
     <Layout>
       <List>
         <ListItem>Lower the learning curve</ListItem>
-        <ListItem>Encourage sharing + discovery</ListItem>
+        <ListItem>Encourage sharing & discovery</ListItem>
         <ListItem>Give a local editor experience</ListItem>
       </List>
     </Layout>
