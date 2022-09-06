@@ -174,7 +174,7 @@ export default class Presentation extends React.Component {
             </div>
           </Notes>
           <Text fit caps textColor="white">
-            Lower the learning curve
+            Spinach is great
           </Text>
         </Slide>
         <Slide bgColor="background">
